@@ -1,5 +1,0 @@
-### about me
-
-#### bio
-
-#### image 
