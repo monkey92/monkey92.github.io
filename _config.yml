@@ -3,7 +3,7 @@
 url: http://ng2.site
 
 # Blog settings
-permalink: /blog/:title
+# permalink: /blog/:title
 
 
 # My variables

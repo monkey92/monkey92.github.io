@@ -48,4 +48,4 @@ var nowPlaying = {
         this.el.innerHTML = this.recentTrack;
     }
 }
-nowPlaying.init();
+// nowPlaying.init();
