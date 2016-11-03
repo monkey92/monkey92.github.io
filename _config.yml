@@ -1,6 +1,7 @@
 
 # site
 url: http://ng2.site
+safe: true
 
 # Blog settings
 # permalink: /blog/:title
@@ -27,5 +28,7 @@ sass:
 markdown: kramdown
 kramdown:
   input: GFM
-  hard_wrap: false
-highlighter: rouge
+  #hard_wrap: false
+#highlighter: rouge
+highlighter: pygments
+highlight: true
