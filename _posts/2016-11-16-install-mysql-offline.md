@@ -100,6 +100,14 @@ mysql 依赖libaio 的库.
 {% endhighlight %}
 
 
+# 注意
+
+1. 初始化数据目录的时候 会创建一个 root 的用户用来连接数据库，会生成一个随机的密码，注意查看。  
+2. 使用随机密码连接数据库之后需要重置数据库密码。ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+
+
+
+
 
 
 
