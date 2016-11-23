@@ -30,5 +30,5 @@ kramdown:
   input: GFM
   #hard_wrap: false
 #highlighter: rouge
-highlighter: pygments
+highlighter: rouge
 highlight: true
