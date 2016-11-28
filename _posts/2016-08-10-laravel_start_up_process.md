@@ -1,7 +1,7 @@
 ---
 layout: post
 title: laravel 启动流程
-categories: php laravel
+categories: php
 ---
 
 # laravel5的启动流程
