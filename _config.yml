@@ -6,11 +6,16 @@ safe: true
 # Blog settings
 # permalink: /blog/:title
 
+paginate: 20
+paginate_path: "/page:num/"
 
 # My variables
 name: Monkey92
 description: 好好学习,天天向上
 google_verification: null
+author: Monkey92
+github: monkey92
+cnzz: true
 
 
 # File management
@@ -29,6 +34,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   #hard_wrap: false
-#highlighter: rouge
 highlighter: rouge
 highlight: true
+
+gems: [jekyll-paginate]

@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    {% if page.title %}
-        <title>{{ page.title }}</title>
-    {% else %}
-        <title>{{ site.name }}</title>
-    {% endif %}
-
-    <meta name="description" content="{{ site.description }}">
-
-    {% if site.google_verification %}
-        <meta name="google-site-verification" content="{{ site.google_verify }}">
-    {% endif %}
-
-    <link rel="icon" href="/assets/img/favicon.png">
-    <link rel="stylesheet" href="/assets/css/google_fonts_Inconsolata.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/pygments.css">
-</head>
-
-<body>
-
-    <div class="wrapper">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="{{ site.author }}" />
+    <title>{% if page.path == 'index.html' %}{{ site.name }}{% else %}{% unless page.id %}{{ site.name }} - {% endunless %}{{ page.title }}{% endif %}</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/highlight.css" />
+    <script type="text/javascript" src="/assets/js/jquery-1.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="main" role="main">
+        <header>
+        <h1>{{ page.title }}</h1>
+        </header>
+        <nav>
+        <span><a title="网站首页" class="" href="/">首页</a></span>
+        <span><a title="文章分类" class="" href="/categories/">分类</a></span>
+        <span><a title="标签索引" class="" href="/tags/">标签</a></span>
+        <!--<span><a title="友情链接" class="" href="/links/">链接</a></span>-->
+        <!--<span><a title="留言交流" class="" href="/guestbook/">留言</a></span>-->
+        <span><a title="关于站长" class="" href="/me/">关于</a></span>
+        <!--<span><a title="种子订阅" class="" href="/feed/" target="_blank">订阅</a></span>-->
+        </nav>
+        <article class="content">
         {{ content }}
+        </article>
+      </div>
+
+    <footer>
+        <p><small>
+            generate by<a href="http://jekyllrb.com" target="_blank">Jekyll</a>
+             <!--| <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/cn/" target="_blank" title="许可协议">©</a> 2005 - {{site.time | date:"%Y"}} -->
+{% if site.cnzz %}
+             | <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260889040'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1260889040%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+{% endif %}
+         </small></p>
+    </footer>
+
     </div>
-
-</body>
-
+  </body>
 </html>
