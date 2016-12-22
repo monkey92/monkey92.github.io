@@ -40,7 +40,7 @@ mysql 依赖libaio 的库.
 
 {% highlight bash %}
     sudo groupadd mysql
-    useradd -r -g mysql -s /bin/false mysql
+    sudo useradd -r -g mysql -s /bin/false mysql
     cd /usr/local
     # 创建软连接指向全路径方便管理
     sudo ln -s mysql-5.7.16-linux-glibc2.5-x86_64 mysql
@@ -52,7 +52,7 @@ mysql 依赖libaio 的库.
     sudo bin/mysqld --initialize --user=mysql 
     sudo bin/mysql_ssl_rsa_setup
     sudo chown -R root .
-    sudo chown -R data mysql-files
+    sudo chown -R mysql data mysql-files
 {% endhighlight %}
 
 
