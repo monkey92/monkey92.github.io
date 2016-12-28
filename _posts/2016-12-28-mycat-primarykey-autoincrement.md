@@ -74,7 +74,7 @@ DELIMITER ;
 mysql> insert into mycat_sequence(name,current_value,increment) values('USER',0,1);
 {% endhighlight %}  
 
-### schema.xml的配置  
+### 3.schema.xml的配置  
 
 schema.xml 要配置mycat_sequence的逻辑表  
 
@@ -83,18 +83,18 @@ schema.xml 要配置mycat_sequence的逻辑表
 {% endhighlight %} 
 
 
-### 3.sequence_db_conf.properties 的配置  
+### 4.sequence_db_conf.properties 的配置  
 
 USER=节点名
 
 
-### 4.server.xml的配置  
+### 5.server.xml的配置  
 
 {% highlight bash %}
  <property name="sequnceHandlerType">1</property>
 {% endhighlight %} 
 
-### 5.两个 auto increment
+### 6.两个 auto increment
 
 mysql创建表主键id 要配 auto_increment  
 schema.xml 配置的逻辑表 autoIncrement="true"  
