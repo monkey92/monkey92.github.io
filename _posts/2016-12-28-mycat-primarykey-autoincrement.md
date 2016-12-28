@@ -17,7 +17,7 @@ categories: mycat
 
 # 使用数据库方式的sequence配置  
 
-### 在任意一个数据节点上创建mycat_sequence表  
+### 1.在随便一个数据节点上创建mycat_sequence表  
 
 {% highlight bash %}
 # sql语句
@@ -66,7 +66,7 @@ DELIMITER ;
 {% endhighlight %}
 
 
-### 插入数据  
+### 2.插入数据  
 
 比如你希望user表使用序列,可以这样插入  
 
@@ -83,18 +83,18 @@ schema.xml 要配置mycat_sequence的逻辑表
 {% endhighlight %} 
 
 
-### sequence_db_conf.properties 的配置  
+### 3.sequence_db_conf.properties 的配置  
 
 USER=节点名
 
 
-### server.xml的配置  
+### 4.server.xml的配置  
 
 {% highlight bash %}
  <property name="sequnceHandlerType">1</property>
 {% endhighlight %} 
 
-### 两个 auto increment
+### 5.两个 auto increment
 
 mysql创建表主键id 要配 auto_increment  
 schema.xml 配置的逻辑表 autoIncrement="true"  
