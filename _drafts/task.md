@@ -13,8 +13,12 @@
 
 ## laravel mycat 的使用配置
 
+## mysql函数 存储过程
 
-## gitbook 为知笔记 的迁移
+## mysql事物理解 
+
+## gitbook日志迁移
+
 
 ## php/c 字符串函数 时间函数 i/o函数 socket函数
 
