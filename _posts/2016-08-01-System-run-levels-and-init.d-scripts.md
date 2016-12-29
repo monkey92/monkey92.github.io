@@ -12,20 +12,15 @@ categories: linux
 ## 关于运行级别  
 	
 Table 1. Mapping between runlevels and systemd targets  
-  
-  ┌─────────┬───────────────────┐  
-  │Runlevel │ Target            │  
-  ├─────────┼───────────────────┤  
-  │0        │ poweroff.target   │  
-  ├─────────┼───────────────────┤  
-  │1        │ rescue.target     │  
-  ├─────────┼───────────────────┤  
-  │2, 3, 4  │ multi-user.target │  
-  ├─────────┼───────────────────┤  
-  │5        │ graphical.target  │  
-  ├─────────┼───────────────────┤  
-  │6        │ reboot.target     │  
-  └─────────┴───────────────────┘  
+
+| Runlevel | Target |
+|----------|:---------------:|
+|0|poweroff.target|
+|1|rescue.target|
+|2,3,4|multi-user.target|
+|5|graphical.target|
+|6|reboot.target|
+
 
 ##  部分翻译  
 
