@@ -8,8 +8,6 @@
 
 ## sqlite 的使用
 
-## mycat 的使用
-
 ## laravel事件队列的理解
 
 ## laravel redis 的使用配置
