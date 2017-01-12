@@ -17,9 +17,6 @@
 
 ## mysql事物理解 
 
-## gitbook日志迁移
-
-
 ## php/c 字符串函数 时间函数 i/o函数 socket函数
 
 ## http协议 配合 curl 工具
