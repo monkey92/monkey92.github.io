@@ -14,7 +14,7 @@ categories: git
 
 {% highlight bash %}
 git rm --cached <file_name>
-# 再把此文件记录到 .gitignore 文件里面
+#再把此文件记录到 .gitignore 文件里面
 {% endhighlight %}
 
 ### 重写提交信息  
@@ -25,9 +25,9 @@ git rm --cached <file_name>
 
 {% highlight bash %}
 git commit -m "fixed the bug_110"
-# 发现有些修改没有提交
+#发现有些修改没有提交
 git add fogotton_changes
-# 发现提交说明写错了
+#发现提交说明写错了
 git commit --amend -m "fix the issue_110"
 {% endhighlight %}
 
@@ -43,8 +43,8 @@ git reset HEAD <file_name>
 ### 撤销工作区文件的修改  
 
 {% highlight bash %}
-# 撤销工作区的修改
+#撤销工作区的修改
 git checkout -- <file_name>
-# 回到上一个提交的版本
+#回到上一个提交的版本
 git checkout <file_name>
 {% endhighlight %}

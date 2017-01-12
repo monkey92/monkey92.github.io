@@ -36,21 +36,21 @@ git commit -m "init project"
 ### 分支操作  
 
 {% highlight bash %}
-# 查看分支
+#查看分支
 git branch
-# 查看分支所指向的提交对象
+#查看分支所指向的提交对象
 git branch -v
-# 创建分支
+#创建分支
 git branch testing
-# 切换分支
+#切换分支
 git checkout testing
-# 创建并切换分支
+#创建并切换分支
 git checkout -b testing
-# 查看哪些分支与当前分支已经合并
+#查看哪些分支与当前分支已经合并
 git branch --merged
-# 查看哪些分支与当前分支没有合并
+#查看哪些分支与当前分支没有合并
 git branch --no-merged
-# 删除分支
+#删除分支
 git branch -d <branch_name> # 已经合并过的分支
 git branch -D <branch_name> # 没有合并的分支强制删除
 {% endhighlight %}
