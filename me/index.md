@@ -1,7 +1,8 @@
 ---
 layout: page
-title: about me
+title: 关于我
 ---
 
-# What do you do?
-All the code I write is on my [Github](https://github.com/monkey92).
+## 正在成为大牛的路上
+
+> 古人所谓豪杰之士者，必有过人之节。人情有所不能忍者，匹夫见辱，拔剑而起，挺身而斗，此不足为勇也。天下有大勇者，卒然临之而不惊,无故加之而不怒。此其所挟持者甚大，而其志甚远也。

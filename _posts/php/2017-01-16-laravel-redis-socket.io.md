@@ -1,7 +1,7 @@
 ---
 layout: post
 title: laravel实现浏览器与服务器的时时通信
-categories: laravel
+categories: php
 ---
 
 
