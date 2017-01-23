@@ -3,13 +3,11 @@
 
 ## php unit的使用
 
-## redis 的操作记录
-
-## sqlite 的使用
+## 正则表达式
 
 ## laravel事件队列的理解
 
-## laravel redis 的使用配置
+## laravel Session的理解
 
 ## laravel mycat 的使用配置
 
